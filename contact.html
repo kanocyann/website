@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>洛鹿松的小站</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <!-- Icon fonts-->
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+    <!-- Lightbox CSS-->
+    <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg py-lg-0">
+        <div class="container"><a href="index.html" class="navbar-brand text-uppercase font-weight-bold">kano</a>
+          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right small"><span class="text-uppercase mr-2">菜单</span><i class="fas fa-bars"></i></button>
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto d-lg-flex align-items-lg-center">
+              <li class="nav-item"><a href="index.html" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4">主页</a>
+              </li>
+              <li class="nav-item"><a href="text.html" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4">文章</a>
+              </li>
+<!--              <li class="nav-item dropdown"><a id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4 dropdown-toggle">Dropdown</a>-->
+<!--                <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu mt-0"><a href="#" class="dropdown-item small text-uppercase">Dropdown item 1</a><a href="#" class="dropdown-item small text-uppercase">Dropdown item 2</a><a href="#" class="dropdown-item small text-uppercase">Dropdown item 3</a><a href="#" class="dropdown-item small text-uppercase">Dropdown item 4</a></div>-->
+<!--              </li>-->
+              <li class="nav-item"><a href="contact.html" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4 active">关于</a>
+              </li>
+              <li class="nav-item mt-4 mt-lg-0">
+                <button type="button" data-toggle="modal" data-target="#loginModal" class="btn btn-outline-primary nav-btn btn-sm"> <i class="fas fa-sign-out-alt mr-2"></i>登录(未部署)</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="loginModal" tabindex="-1" role="dialog" aria-lebelledby="loginModalLabel" aria-hidden="true" class="modal fade">
+      <div role="document" class="modal-dialog modal-sm">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h5 id="loginModalLabel" class="text-uppercase modal-title m-0">登录</h5>
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true" class="small text-muted">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="form-group">
+                <input type="email" placeholder="email" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="password" class="form-control">
+              </div>
+              <div class="form-group text-center">
+                <button type="submit" class="btn btn-outline-primary nav-btn btn-sm"> <i class="fas fa-sign-out-alt mr-2"></i>登录</button>
+              </div>
+            </form>
+            <div class="text-center">
+              <p class="text-muted small">还没有注册？</p>
+              <p class="small text-muted"> <a href="#" class="font-weight-bold">现在注册！</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="py-5 bg-cover bg-gray">
+      <div class="container py-5">
+        <div aria-label="breadcrumb" class="nav">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./">主页</a></li>
+            <li aria-current="page" class="breadcrumb-item active">关于</li>
+          </ol>
+        </div>
+        <h1 class="lined">关于</h1>
+        <p class="lead my-4">我是一名学习计算机的大学生，在<a href="https://www.hlju.edu.cn/" target="_blank">黑龙江大学</a>读书。</p>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="row">
+              <div class="col-lg-12 col-md-6 mb-4">
+                <div class="icon mb-4"><i class="pe-7s-map-2"></i></div>
+                <h5 class="lined mb-4">地址</h5>
+                <p class="text-muted mb-0 text-small">Harbin, Nangang Qu</p>
+                <p class="text-muted mb-0 text-small">Haxi Street, Xuefu Road, 74#</p>
+                <p class="text-muted mb-0 text-small">China, <strong>Heilongjiang Province</strong></p>
+              </div>
+              <div class="col-lg-12 col-md-6 mb-4">
+                <div class="icon mb-4"><i class="pe-7s-phone"></i></div>
+                <h5 class="lined mb-4">电话</h5>
+                <p class="text-muted mb-3 text-small">如果您不在中国，更推荐发送电子邮件</p>
+                <p class="text-muted font-weight-bold">+86 17645775683</p>
+              </div>
+              <div class="col-lg-12 col-md-6 mb-4">
+                <div class="icon mb-4"><i class="pe-7s-mail-open"></i></div>
+                <h5 class="lined mb-4">邮件通信</h5>
+                <p class="text-muted mb-3 text-small">我的电子邮件地址如下</p>
+                <ul>
+                  <li><a href="mailto://kanamepeno@gmail.com" class="font-weight-bold text-small">kanamepeno@gmail.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 ml-auto">
+            <div class="col-lg-12 col-md-6 mb-4">
+              <div class="icon mb-4"><i class="pe-7s-pen"></i></div>
+              <h5 class="lined mb-4">联系表格</h5>
+              <p class="text-muted text-small">请您填写以下来访信息表格。</p>
+              <form id="contact-form" method="post" action="contact.php" class="contact-form form">
+                <div class="row">
+                  <div class="form-group col-lg-6">
+                    <label for="name" class="font-weight-normal">姓</label>
+                    <input id="name" type="text" name="name" class="form-control">
+                  </div>
+                  <div class="form-group col-lg-6">
+                    <label for="surname" class="font-weight-normal">名</label>
+                    <input id="surname" type="text" name="surname" class="form-control">
+                  </div>
+                  <div class="form-group col-lg-6">
+                    <label for="email" class="font-weight-normal">E-mail</label>
+                    <input id="email" type="email" name="email" class="form-control">
+                  </div>
+                  <div class="form-group col-lg-6">
+                    <label for="subject" class="font-weight-normal">职业</label>
+                    <input id="subject" type="text" name="subject" class="form-control">
+                  </div>
+                  <div class="form-group col-lg-12">
+                    <label for="message" class="font-weight-normal">详情</label>
+                    <textarea id="message" rows="4" name="message" class="form-control"></textarea>
+                  </div>
+                  <div class="form-group col-lg-12">
+                    <button type="submit" class="btn btn-outline-primary"> <i class="far fa-envelope mr-2"> </i>发送(未部署)</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--    <div id="map"><iframe src="https://www.amap.com/" width="100%" height="100%" frameborder="0" style="border:0" sandbox=""></iframe></div>-->
+    <footer style="background: #eee;" class="pt-5">
+      <div class="container py-5">
+        <div class="row">
+<!--          <div class="col-lg-8 col-md-6 mb-4">-->
+<!--            <h5 class="lined lined-dark mb-3">About Multi</h5>-->
+<!--            <p class="text-muted text-small">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus magna. Cras in mi at felis aliquet congue. Vivamus magna. Cras in mi at felis aliquet congue.</p>-->
+<!--            <p class="text-muted text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue.</p>-->
+<!--          </div>-->
+<!--          <div class="col-lg-4 col-md-6 mb-4">-->
+<!--            <h5 class="lined lined-dark mb-3">Our offices</h5>-->
+<!--            <h6>London</h6>-->
+<!--            <p class="text-muted mb-0 text-small">Donec eleifend</p>-->
+<!--            <p class="text-muted mb-0 text-small">libero at sagittis</p>-->
+<!--            <p class="text-muted mb-4 text-small">mollis + 44 2556 789 8799 </p>-->
+<!--            <h6>Paris</h6>-->
+<!--            <p class="text-muted mb-0 text-small">Donec eleifend</p>-->
+<!--            <p class="text-muted mb-0 text-small">libero at sagittis</p>-->
+<!--            <p class="text-muted mb-0 text-small">mollis + 44 2556 789 8799 </p>-->
+<!--          </div>-->
+<!--          <div class="col-lg-4 col-md-6 mb-4">-->
+<!--            <h5 class="lined lined-dark mb-3">Popular Categories</h5>-->
+<!--            <ul class="list-unstyled">-->
+<!--              <li><a href="#" class="footer-link text-small">Graphic design</a></li>-->
+<!--              <li><a href="#" class="footer-link text-small">Web design</a></li>-->
+<!--              <li><a href="#" class="footer-link text-small">Support</a></li>-->
+<!--              <li><a href="#" class="footer-link text-small">Accounting</a></li>-->
+<!--            </ul>-->
+<!--          </div>-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5 class="lined lined-dark mb-3">和我联系</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://github.com/kanocyann" target="_blank" class="social-link"><i class="fab fa-github"></i></a></li>
+              <li class="list-inline-item"><a href="https://t.me/kanamepe" target="_blank" class="social-link"><i class="fab fa-telegram"></i></a></li>
+              <li class="list-inline-item"><a href="https://twitter.com/kanamepeno" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="mailto://kanamepeno@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="lined lined-dark mb-3">友情链接</h5>
+            <p><a href="#" target="_blank">待申</a></p>
+            <p><a href="#" target="_blank">待申</a></p>
+            <p><a href="#" target="_blank">待申</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-dark py-4">    
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 text-center text-lg-left mb-1 mb-lg-0">
+              <p class="small text-gray mb-0">© <a href="https://www.gnu.org/">GNU</a><a href="#"> / </a><a href="https://www.linux.org/">Linux</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+<!--    <script src="vendor/jquery/jquery.min.js"></script>-->
+<!--    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
+    <script src="vendor/lightbox2/js/lightbox.min.js"></script>
+    <script src="js/front.js"></script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>

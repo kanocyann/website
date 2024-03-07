@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>洛鹿松的小站</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+    <!-- Icon fonts-->
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+    <!-- Lightbox CSS-->
+    <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg py-lg-0">
+        <div class="container"><a href="index.html" class="navbar-brand text-uppercase font-weight-bold">kano</a>
+          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right small"><span class="text-uppercase mr-2">菜单</span><i class="fas fa-bars"></i></button>
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto d-lg-flex align-items-lg-center">
+              <li class="nav-item"><a href="index.html" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4">主页</a>
+              </li>
+              <li class="nav-item"><a href="text.html" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4 active">文章</a>
+              </li>
+<!--              <li class="nav-item dropdown"><a id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4 dropdown-toggle">Dropdown</a>-->
+<!--                <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu mt-0"><a href="#" class="dropdown-item small text-uppercase">Dropdown item 1</a><a href="#" class="dropdown-item small text-uppercase">Dropdown item 2</a><a href="#" class="dropdown-item small text-uppercase">Dropdown item 3</a><a href="#" class="dropdown-item small text-uppercase">Dropdown item 4</a></div>-->
+              </li>
+              <li class="nav-item"><a href="contact.html" class="nav-link font-weight-bold text-uppercase px-lg-3 py-lg-4">关于</a>
+              </li>
+              <li class="nav-item mt-4 mt-lg-0">
+                <button type="button" data-toggle="modal" data-target="#loginModal" class="btn btn-outline-primary nav-btn btn-sm"> <i class="fas fa-sign-out-alt mr-2"></i>登录(未部署)</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="loginModal" tabindex="-1" role="dialog" aria-lebelledby="loginModalLabel" aria-hidden="true" class="modal fade">
+      <div role="document" class="modal-dialog modal-sm">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h5 id="loginModalLabel" class="text-uppercase modal-title m-0">登录</h5>
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true" class="small text-muted">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="form-group">
+                <input type="email" placeholder="email" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="password" class="form-control">
+              </div>
+              <div class="form-group text-center">
+                <button type="submit" class="btn btn-outline-primary nav-btn btn-sm"> <i class="fas fa-sign-out-alt mr-2"></i>登录</button>
+              </div>
+            </form>
+            <div class="text-center">   
+              <p class="text-muted small">还没有注册？</p>
+              <p class="small text-muted"> <a href="#" class="font-weight-bold">现在注册！</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="py-5 bg-cover bg-gray">
+      <div class="container py-5">
+        <div aria-label="breadcrumb" class="nav">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./">主页</a></li>
+            <li aria-current="page" class="breadcrumb-item active">文章</li>
+          </ol>
+        </div>
+        <h1 class="lined">文章</h1>
+        <p class="lead my-4">一些想写的东西和笔记都在这里。</p>
+      </div>
+    </section>
+    <figure><img src="img/jumbotron1.jpg" alt="" class="w-100">
+    </figure>
+    <section class="py-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="my-4">（一）</h2>
+            <div class="container py-5">
+              <h2 class="mb-4">Python中[-1]、[:-1]、[::-1]、[n::-1]、[:,:,0]、[…,0]、[…,::-1] 的理解</h2>
+              <p class="lead">下面的a = [1,2,3,4,5]</p>
+              <p class="text-small">[-1]： 列表最后一项 </br>[:-1]： 从第一项到最后一项 原型是[n : m]，前闭后开，索引从零开始，第一个索引指定可以取到，即n可以取到，后一个索引不可取到，即m不可取到。</br>[::-1]： 代表从全列表倒序取 原型是[n : m : k]，代表的是从那一段开始取，隔几个取一次。 其中，n代表的是取值开始的索引，因此该索引必将被取到，m代表的是取值结束的索引，和上面一样，该值不能被取到。 k代表的是间隔，间隔可正可负，正值代表正向顺序跳取，负值代表反向跳取。 需要注意的是，当k为正的时候起始索引应该小于结束索引；当k为负的时候起始索引应该大于结束索引，因为在倒序来看，首先是索引值大的被取到，然后才是索引值小的。</br>[n::-1]： 同上所述，从索引n开始倒序取值：</br>[:,:,0]： 因为有了逗号，所以这个方法就和前面的有所不同了。它是对多维数据的一种处理方式，代表了前两维全选，取其中的所有0号索引。 原型是[n:m, j:k, g:h]，当然维度可以更多，在图片处理中，一般用到的就是三维的。看a数组的模样就可以看出来，nm管最外层列表的取值，从第n个元素到第m个元素，前闭后开；jk管nm取中的元素的列表中的元素的选取，也是前闭后开，gh管jk取中元素的列表中的元素的选取，任意一对都可以是个整数用来直接取某个索引，这和前两个很像。 其实就是嵌套列表的取值方法。</br>[…,0]： 代表了取最里边一层的所有第0号元素，…代表了对:,:,:,的省略。注意只能进行一次省略，不能是[… , …]，全省略就是a了。</p>
+              <p class="my-5"></p>
+            </div>
+          </div>
+            <div class="border-bottom my-4"></div>
+
+            <form id="contact-form" method="post" class="contact-form form">
+              <div class="row">
+                <div class="form-group col-lg-6">
+                  <label for="name" class="font-weight-normal">姓名<span class="text-primary">*</span></label>
+                  <input id="name" type="text" name="name" required class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-lg-6">
+                  <label for="email" class="font-weight-normal">E-mail<span class="text-primary">*</span></label>
+                  <input id="email" type="email" name="email" required class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-lg-12">
+                  <label for="message" class="font-weight-normal">留言<span class="text-primary">*</span></label>
+                  <textarea id="message" rows="3" name="message" class="form-control"></textarea>
+                </div>
+                <div class="form-group col-lg-12 text-right">
+                  <button type="submit" class="btn btn-outline-primary"> <i class="far fa-comment mr-2"> </i>发送(未部署)</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer style="background: #eee;" class="pt-5">
+      <div class="container py-5">
+        <div class="row">
+          <!--          <div class="col-lg-8 col-md-6 mb-4">-->
+          <!--            <h5 class="lined lined-dark mb-3">About Multi</h5>-->
+          <!--            <p class="text-muted text-small">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus magna. Cras in mi at felis aliquet congue. Vivamus magna. Cras in mi at felis aliquet congue.</p>-->
+          <!--            <p class="text-muted text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue.</p>-->
+          <!--          </div>-->
+          <!--          <div class="col-lg-4 col-md-6 mb-4">-->
+          <!--            <h5 class="lined lined-dark mb-3">Our offices</h5>-->
+          <!--            <h6>London</h6>-->
+          <!--            <p class="text-muted mb-0 text-small">Donec eleifend</p>-->
+          <!--            <p class="text-muted mb-0 text-small">libero at sagittis</p>-->
+          <!--            <p class="text-muted mb-4 text-small">mollis + 44 2556 789 8799 </p>-->
+          <!--            <h6>Paris</h6>-->
+          <!--            <p class="text-muted mb-0 text-small">Donec eleifend</p>-->
+          <!--            <p class="text-muted mb-0 text-small">libero at sagittis</p>-->
+          <!--            <p class="text-muted mb-0 text-small">mollis + 44 2556 789 8799 </p>-->
+          <!--          </div>-->
+          <!--          <div class="col-lg-4 col-md-6 mb-4">-->
+          <!--            <h5 class="lined lined-dark mb-3">Popular Categories</h5>-->
+          <!--            <ul class="list-unstyled">-->
+          <!--              <li><a href="#" class="footer-link text-small">Graphic design</a></li>-->
+          <!--              <li><a href="#" class="footer-link text-small">Web design</a></li>-->
+          <!--              <li><a href="#" class="footer-link text-small">Support</a></li>-->
+          <!--              <li><a href="#" class="footer-link text-small">Accounting</a></li>-->
+          <!--            </ul>-->
+          <!--          </div>-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5 class="lined lined-dark mb-3">和我联系</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://github.com/kanocyann" target="_blank" class="social-link"><i class="fab fa-github"></i></a></li>
+              <li class="list-inline-item"><a href="https://t.me/kanamepe" target="_blank" class="social-link"><i class="fab fa-telegram"></i></a></li>
+              <li class="list-inline-item"><a href="https://twitter.com/kanamepeno" class="social-link"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="mailto://kanamepeno@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="lined lined-dark mb-3">友情链接</h5>
+            <p><a href="#" target="_blank">待申</a></p>
+            <p><a href="#" target="_blank">待申</a></p>
+            <p><a href="#" target="_blank">待申</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-dark py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 text-center text-lg-left mb-1 mb-lg-0">
+              <p class="small text-gray mb-0">© <a href="https://www.gnu.org/">GNU</a><a href="#"> / </a><a href="https://www.linux.org/">Linux</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+<!--    <script src="vendor/jquery/jquery.min.js"></script>-->
+<!--    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
+    <script src="vendor/lightbox2/js/lightbox.min.js"></script>
+    <script src="js/front.js"></script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>
